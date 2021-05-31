@@ -1,0 +1,90 @@
+.selectOptions{
+    padding: 10px;
+    label, select{
+        padding: 10px;
+        display: block;
+        outline: none;
+    }
+    label{
+        padding: 10px 0;
+        font-weight: bold;
+    }
+    select{
+        outline: none;
+        padding: 5px;
+    }
+}
+
+.container{
+    width: 100%;
+    padding: 20px;
+}
+
+fieldset{
+    border-radius: 10px;
+    border: 1px solid #c4c4c4;
+    padding: 10px;
+    p{
+        padding: 5px 0;
+        color: rgb(23, 114, 23);
+    }
+    .data-trans{
+        min-height: 100px;
+        p{
+            all: unset;
+        }
+        ol{
+            padding: 0 30px;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            li{
+                border: 1.5px solid #dbdada;
+                padding: 10px;
+                border-radius: 10px;
+                p{
+                    display: block;
+                    padding: 3px 0;
+                    &.textCopy{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+legend{
+    margin: 0 30px;
+    color: rgb(151, 151, 151);
+    font-weight: bold;
+}
+
+.notification-trans{
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgb(160, 158, 158);
+    color: yellowgreen;
+    transition: 0.3s all linear;
+    animation: notificationZoom 0.3s linear;
+}
+
+@keyframes notificationZoom{
+    from{
+        transform: translate(-50%, -50%) scale(0);
+    }to{
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.moveAway{
+    position: absolute;
+    left: -10000px;
+}

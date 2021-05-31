@@ -1,0 +1,111 @@
+$poppins: 'Poppins', sans-serif;
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f3f3f3;
+}
+
+.account{
+    display: none;
+    &.active{
+        display: block;
+    }
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: white;
+    box-shadow: 0 0 26px #999;
+    border-radius: 10px;
+
+    h1{
+        width: 100%;
+        padding: 20px 20px 0px 20px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+    p{
+        width: 100%;
+        text-align: center;
+        font-family: $poppins;
+        padding: 10px;
+        color: orangered;
+        font-weight: bold;
+    }
+    .messages{
+        width: 100%;
+        padding: 10px;
+        color: white;
+        font-family: $poppins;
+        border-radius: 5px;
+        margin: 3px 0;
+        &.error{
+            background: tomato;
+        }
+        ol{
+            padding: 0 0px 0 25px ;
+            width: 100%;
+            list-style: decimal-leading-zero;
+        }
+    }
+    .separator{
+        height: 10px;
+        width: 100%;
+    }
+    .cred{
+        width: 100%;
+        padding: 5px 0;
+        position: relative;
+        input{
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #cfcece;
+            outline: none;
+            font-family: $poppins;
+            border-radius: 5px;
+            height: 40px;
+        }
+        i{
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            &:active{
+                font-size: 13px;
+            }
+        }
+    }
+    .extraSection{
+        width: 100%;
+        padding: 4px 0;
+        a{
+            display: block;
+            text-decoration: none;
+            font-family: $poppins;
+            font-size: 11px;
+            color: #9c9c9c;
+            transition: 0.3s all linear;
+            border-image-width: 100%;
+            &:hover{
+                color: orangered;
+            }
+        }
+    }
+    .send-btn{
+        padding: 5px 0;
+        width: 100%;
+        input, button{
+            height: 35px;
+            width: 100%;
+            outline: none;
+        }
+    }
+}

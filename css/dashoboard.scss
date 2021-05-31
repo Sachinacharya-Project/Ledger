@@ -1,0 +1,48 @@
+
+.selectOptions{
+    width: 100%;
+    padding: 10px;
+    label, select{
+        display: block;
+        outline: none;
+    }
+    label{
+        padding: 10px 0;
+        font-weight: bold;
+    }
+    select{
+        outline: none;
+        padding: 5px;
+    }
+}
+.div-trans{
+    width: 100%;
+    padding: 20px;
+}
+fieldset{
+    border-radius: 10px;
+    border: 1px solid #c4c4c4;
+    padding: 10px;
+    p{
+        padding: 5px 0;
+        color: rgb(23, 114, 23);
+    }
+    .transactionhistory{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .boxes{
+            padding: 0 10px;
+            span, strong{
+                display: block;
+                padding: 2px 0;
+            }
+        }
+    }
+}
+legend{
+    margin: 0 30px;
+    color: rgb(151, 151, 151);
+    font-weight: bold;
+}

@@ -1,0 +1,141 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f3f3f3;
+}
+
+.account {
+  display: none;
+  width: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: white;
+  -webkit-box-shadow: 0 0 26px #999;
+          box-shadow: 0 0 26px #999;
+  border-radius: 10px;
+}
+
+.account.active {
+  display: block;
+}
+
+.account h1 {
+  width: 100%;
+  padding: 20px 20px 0px 20px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.account p {
+  width: 100%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+  color: orangered;
+  font-weight: bold;
+}
+
+.account .messages {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px;
+  margin: 3px 0;
+}
+
+.account .messages.error {
+  background: tomato;
+}
+
+.account .messages ol {
+  padding: 0 0px 0 25px;
+  width: 100%;
+  list-style: decimal-leading-zero;
+}
+
+.account .separator {
+  height: 10px;
+  width: 100%;
+}
+
+.account .cred {
+  width: 100%;
+  padding: 5px 0;
+  position: relative;
+}
+
+.account .cred input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #cfcece;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px;
+  height: 40px;
+}
+
+.account .cred i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.account .cred i:active {
+  font-size: 13px;
+}
+
+.account .extraSection {
+  width: 100%;
+  padding: 4px 0;
+}
+
+.account .extraSection a {
+  display: block;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  color: #9c9c9c;
+  -webkit-transition: 0.3s all linear;
+  transition: 0.3s all linear;
+  border-image-width: 100%;
+}
+
+.account .extraSection a:hover {
+  color: orangered;
+}
+
+.account .send-btn {
+  padding: 5px 0;
+  width: 100%;
+}
+
+.account .send-btn input, .account .send-btn button {
+  height: 35px;
+  width: 100%;
+  outline: none;
+}
+/*# sourceMappingURL=account.css.map */

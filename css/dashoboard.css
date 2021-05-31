@@ -1,0 +1,63 @@
+.selectOptions {
+  width: 100%;
+  padding: 10px;
+}
+
+.selectOptions label, .selectOptions select {
+  display: block;
+  outline: none;
+}
+
+.selectOptions label {
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.selectOptions select {
+  outline: none;
+  padding: 5px;
+}
+
+.div-trans {
+  width: 100%;
+  padding: 20px;
+}
+
+fieldset {
+  border-radius: 10px;
+  border: 1px solid #c4c4c4;
+  padding: 10px;
+}
+
+fieldset p {
+  padding: 5px 0;
+  color: #177217;
+}
+
+fieldset .transactionhistory {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+fieldset .transactionhistory .boxes {
+  padding: 0 10px;
+}
+
+fieldset .transactionhistory .boxes span, fieldset .transactionhistory .boxes strong {
+  display: block;
+  padding: 2px 0;
+}
+
+legend {
+  margin: 0 30px;
+  color: #979797;
+  font-weight: bold;
+}
+/*# sourceMappingURL=dashoboard.css.map */
